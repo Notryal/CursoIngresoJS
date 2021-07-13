@@ -11,10 +11,10 @@ function mostrardescuento()
 
 	importe = parseInt(document.getElementById("txtIdImporte").value);
 
-	descuento = 25 * importe / 100;
+	descuento = 0.25 *  importe;
 
 	resultado = importe - descuento;
 
-	document.getElementById("textIdResultado").value = resultado;
+	document.getElementById("txtIdResultado").value = resultado;
 
 }

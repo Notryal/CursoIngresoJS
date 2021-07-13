@@ -48,14 +48,17 @@ function PrecioFinal ()
 	let precio3;
     let suma;
     let iva;
+    let sumafinal;
 
     precio1 = parseInt(document.getElementById("txtIdPrecioUno").value);
     precio2 = parseInt(document.getElementById("txtIdPrecioDos").value);
     precio3 = parseInt(document.getElementById("txtIdPrecioTres").value);
-    
+
     suma = precio1 + precio2 + precio3
     iva = suma + 0.21
 
-    alert("El precio final mas el 21% de IVA es " + iva)
+    sumafinal = iva + suma
+
+    alert("El precio final mas el 21% de IVA es " + sumafinal)
 
 }
