@@ -24,11 +24,13 @@ function CalcularPrecio ()
     descuento,
     costofinal,
     impuesto,
-    costo;
+    costo =35;
+
+    // la variable costo la sabes en la compilacion
 
     cantidad = parseInt(document.getElementById("txtIdCantidad").value);
     marca = document.getElementById("Marca").value;
-    costo = 35;
+   // costo = 35;
 
 
     switch (cantidad) {
@@ -55,8 +57,8 @@ function CalcularPrecio ()
                 descuento = costo * 0.05;
             }
             break;
-        case 1:
         case 2:
+        case 1:
                 descuento = 0;
             break;
         default:
@@ -74,7 +76,7 @@ function CalcularPrecio ()
         alert("Usted pago " + impuesto + " de IIBB");
         alert(`Su costo total (impuesto incluido) es `  + (impuesto+costofinal));
     } else {
-            document.getElementById("txtIdprecioDescuento").value = costofinal;
+        document.getElementById("txtIdprecioDescuento").value = costofinal;
 
     }
     
