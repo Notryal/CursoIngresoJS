@@ -1,7 +1,21 @@
 function mostrar()
 {
+	let numero,
+	cont=0;
+	numero =parseInt(prompt("Ingrese un numero: "));
+	while (isNaN(numero) || numero<0) {
+		numero = parseInt(prompt("Incorrecto, ingrese un número ENTERO y REAL: "));
+	}
 
-	alert("ok");
+	for (let i = 1; i<=numero; i++) {
 
+
+		if (numero % i ==0){  //si el numero es divisor
+			console.log(i);
+			cont++;
+		}
+	}
+
+	alert("Cantidad de divisores es : "+ cont++);
 
 }//FIN DE LA FUNCIÓN

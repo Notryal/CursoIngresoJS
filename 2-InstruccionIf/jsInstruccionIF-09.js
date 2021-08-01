@@ -7,7 +7,7 @@ function mostrar()
 	max= 10
 	min= 1
 
-	numero = Math.floor(Math.random() * (max - min + 1) -min);
+	numero = Math.floor(Math.random() * (max - min + 1) +min);
 
 	//let max, min;
 	//numero = Math.floor(Math.random() * 10 + 1);
